@@ -1,0 +1,490 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 550px) and (max-width: 1024px) {
+  .works {
+    width: 80%;
+    flex-direction: column;
+    gap: 0.5rem;
+    display: flex;
+    margin: 1rem auto; /* Centers the element on small screens */
+    height: auto; /* Avoids fixed height issues */
+    padding: 0.5rem;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 10px 10px 20px rgb(182, 178, 178);
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .personal-info h1 {
+    font-size: 30px;
+  }
+  
+  
+ 
+  .sidebar {
+    position: absolute;
+    top: 2%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .sidebar-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem auto;
+  }
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar svg {
+    scale: 80%;
+  }
+  .navbar svg:nth-of-type(1) {
+    display: none;
+  }
+  #ipad {
+    max-width: 200px;
+    height: auto;
+    scale: 1;
+  }
+  .tooltip-container {
+    display: flex;
+    scale: 0.9;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .latestHeading {
+    display: block;
+    margin-bottom: auto;
+    margin-top: 1rem;
+    border: 2px solid blue;
+  }
+  /* .swiper {
+    border: 2px solid blue;
+    display: flex;
+    width: 110%;
+  }
+  .swiper-slide{
+    border: 2px solid green;
+    width: 100%;
+    height: auto;
+    display: flex;
+  } */
+  .works {
+    width: 80%;
+    flex-direction: column;
+    gap: 0.5rem;
+    display: flex;
+    margin: 1rem auto;
+    height: auto;
+    padding: 0.5rem;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 10px 10px 20px rgb(182, 178, 178);
+    border-radius: 10px;
+    border: none;
+  }
+
+  .lets-connect {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1;
+  }
+  .lets-connect input {
+    min-width: 100%;
+  }
+
+  .popup p {
+    min-width: 70%;
+    font-size: 1rem;
+  }
+  .visit-site {
+    position: absolute;
+    z-index: 100;
+    top: -10%;
+    left: 50%;
+    scale: 70%;
+    transform: translate(-70%, -50%);
+  }
+  #ipad-container {
+    width: 100%; /* Makes the container responsive */
+    max-width: 450px; /* Optional: Restrict maximum width */
+    height: auto; /* Allows height to adjust with content */
+    overflow: visible;
+    padding: 0;
+    margin: 0 auto; /* Center the container if needed */
+    display: flex; /* Optional: Ensures better alignment of children */
+    justify-content: center;
+    align-items: center;
+  }
+  .work-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .works #work-imgs {
+    width: auto;
+    height: auto;
+  }
+
+  .works > .image,
+  .details {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .details {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+  }
+  section2 {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #work-imgs {
+    position: relative;
+  }
+  .visit-site {
+    position: absolute;
+    z-index: 100;
+    top: -10%;
+    left: 50%;
+    scale: 70%;
+    transform: translate(-70%, -50%);
+  }
+
+  .works {
+    width: 80%; /* Adjusts to the container width */
+    flex-direction: column;
+    gap: 0.5rem;
+    display: flex;
+    margin: 1rem auto; /* Centers the element on small screens */
+    height: auto; /* Avoids fixed height issues */
+    padding: 0.5rem;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 10px 10px 20px rgb(182, 178, 178);
+    border-radius: 10px;
+  }
+  .works .details h1 {
+    font-size: 20px;
+    margin-bottom: 0%;
+  }
+  .joner {
+    font-size: 4px;
+    margin-top: 0%;
+  }
+  .works .details p:nth-of-type(2) {
+    font-size: 10px;
+    min-width: 120%;
+    margin-bottom: 16px;
+  }
+  .latestHeading {
+    border: none;
+    margin-top: 0%;
+    margin-bottom: 1rem;
+  }
+
+  .works h1 {
+    font-size: 1.5rem;
+  }
+  .works p {
+    font-size: 1rem;
+  }
+  .visit-site::after {
+    content: "";
+    display: none;
+  }
+  #ipad-container {
+    width: 80%; /* Adjusts to the container width */
+    flex-direction: column;
+    gap: 0.5rem;
+    display: flex;
+    margin: 1rem auto; /* Centers the element on small screens */
+    height: auto; /* Avoids fixed height issues */
+    padding: 0.5rem;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 10px 10px 20px rgb(182, 178, 178);
+    border-radius: 10px;
+  }
+  #ipad {
+    width: 100%; /* Make it responsive to container width */
+    height: auto; /* Maintain aspect ratio */
+    scale: 1; /* Adjust scale to fit smaller screens */
+  }
+
+  .swiper-card img {
+    max-width: 90px;
+    min-height: auto;
+    margin: 10px auto;
+  }
+  .swiper-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .mySwiper {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 200ms linear;
+    padding: 0rem 5rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+#popup {
+  /* background-color: black; */
+  display: hidden;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 85%;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  transition: all 1s ease-in;
+}
+.popup p {
+  min-width: 50%;
+  font-size: larger;
+}
+
+.resume {
+  position: relative;
+  place-self: center;
+  align-self: center;
+  margin-top: 4rem;
+}
+.resume::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #18608c;
+  transform: scaleX(0);
+  transform-origin: bottom;
+  transition: transform 200ms ease-in-out;
+  border-radius: 35px;
+}
+
+.resume:hover::before {
+  transform: scaleX(1);
+  transform-origin:top;
+  border-radius: 35px;
+  border:2px solid #1595b6;
+}
+
+.tooltips {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+.tooltips h1 {
+  font-size: 2rem;
+}
+
+.tooltip-popup {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-20%, -50%);
+  scale: 0;
+  border-radius: 25px;
+  padding: 5px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: 1000;
+}
+.tooltips:hover .tooltip-popup {
+  scale: 1;
+  color: black;
+  position: absolute;
+  top: -30%;
+  border-radius: 25px;
+  padding: 5px;
+  opacity: 1;
+}
+.tooltip-popup::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 1;
+  z-index: -500;
+}
+
+.latestHeading {
+  border: 2px solid rgb(23, 136, 174);
+  border-top: none;
+  padding: 14px;
+  color: rgb(23, 136, 174);
+  border-radius: 5px;
+  place-self: center;
+}
+#work-imgs {
+  transition: all 200ms linear;
+  width: 25rem;
+  height: 21.875rem;
+  margin: 0rem 5rem;
+  object-fit: cover;
+  padding: 0%;
+}
+
+.works {
+  margin-bottom: 80px;
+}
+
+.visit-site::after {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  background-color: inherit;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, 60%) rotate(45deg);
+  z-index: -10;
+}
+
+#ipad {
+  width: 350px;
+  height: 400px;
+  /* width: 350px;
+  height: 400px; */
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+  scale: 1.2;
+}
+.mySwiper {
+  width: 70%;
+  height: 100%;
+  transition: all 200ms linear;
+  padding: 0rem 5rem;
+}
+
+.sendButton {
+  width: 95%;
+  padding: 10px;
+  position: relative;
+  font-size: larger;
+  border: 2px solid grey;
+  margin-top: 16px;
+  background-color: transparent;
+  z-index: 10;
+}
+.sendButton::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #374151;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 200ms ease-in-out;
+}
+
+.sendButton:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#ipad {
+  width: 350px;
+  height: 400px;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+  scale: 1;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  #ipad {
+    width: 180px;
+    height: 200px;
+    scale: 1;
+  }
+
+  #ipad-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .image {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .details {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+.bigsvg {
+  width: 50%;
+  height: auto;
+}
